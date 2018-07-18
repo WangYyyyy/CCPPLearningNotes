@@ -1,11 +1,27 @@
 #include <stdio.h>
 
+void br();
+void ic();
+
 int main(int argc, char const *argv[])
 {
-	float sec = 3.156e7;
-	float age;
-	printf("Enter your age:\n");
-	scanf("%f", &age);
-	printf("Your age of seconds is %.0f second\n", age * sec);
+	
+	br();
+	printf(", ");
+	ic();
+	printf("\n");
+	ic();
+	printf(",\n");
+	br();
 	return 0;
+}
+
+void br()
+{
+	printf("Brazil, Russia");
+}
+
+void ic()
+{
+	printf("India, China");
 }

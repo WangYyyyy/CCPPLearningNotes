@@ -2,8 +2,12 @@
 
 int main(int argc, char const *argv[])
 {
-	printf("\a\n");
-	printf("Startled by the sudden sound, sally shouted,\n");
-	printf("\"By the Great Pumpkin, what was that\"\n");
+	int age;
+	age = 27;
+	printf("My age is %d\n", age);
+	int days;
+	days = age * 365;
+	printf("the age of days is %d\n",days );
+
 	return 0;
 }

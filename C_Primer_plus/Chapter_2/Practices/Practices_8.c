@@ -1,13 +1,24 @@
 #include <stdio.h>
 
+void one_three();
+void two();
+
 int main(int argc, char const *argv[])
 {
-	float cup;
-	printf("输入杯数:\n");
-	scanf("%f", &cup);
-	printf("%.0f杯等于%.2f品脱\n", cup, cup/2);
-	printf("%.0f杯等于%.2f盎司\n", cup, cup*8);
-	printf("%.0f杯等于%.2f汤勺\n", cup, cup*8*2);
-	printf("%.0f杯等于%.2f茶勺\n", cup, cup*8*2*3);
+	printf("starting now:\n");
+	one_three();
+	printf("done!\n");
 	return 0;
+}
+
+void one_three()
+{
+	printf("one\n");
+	two();
+	printf("three\n");
+}
+
+void two()
+{
+	printf("two\n");
 }
