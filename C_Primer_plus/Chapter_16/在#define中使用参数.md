@@ -95,3 +95,18 @@ int x3 = 40;
 
 ## 变参宏: …和 \__VA_ARGS__
 
+把宏参数列表中最后的参数写成3个点(...), 使用\__VA_ARGS__代替参数部分
+
+##### 实例
+
+```
+#define PR(...) print(__VA_ARGS__);
+```
+
+```
+PR("Howdy");
+//展开一个参数 "Howdy"
+PR("weight = %d, shipping = $%.2f\n", wt, sp);
+//展开了三个参数, "weight...\n", wt, sp;
+```
+
